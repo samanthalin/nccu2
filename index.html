@@ -15,7 +15,9 @@
 		<a-assets>
 			
 		</a-assets>
-		<a-sphere radius="0.6" class="sun" id="real-sun" material="shader:flat;color:#f7ff2d" light="type:point" static-body="sphereRadius:NaN" position="0.387 11.561 3.063" ></a-sphere>
+		<a-sphere radius="0.6" class="sun" id="real-sun" material="shader:flat;color:#f7ff2d" light="type:point" static-body="sphereRadius:NaN" position="0.387 11.561 3.063" >
+			<a-text value="this is the real sun" color="black" id="real-text" position="1.213 0 -0.945" rotation="64.11397727513912 -179.9087476710785 0.057295779513082325" scale="1.525 1 1" visible="false"></a-text>
+		</a-sphere>
 		<a-sphere radius="0.6" class="sun" id="sun-1" material="shader:flat;color:#f7ff2d" light="type:point" static-body="sphereRadius:NaN" position="-9.529 8.08 1.012" geometry="" animation__expand1="property:radius;startEvents:explode;to:2;dur:200;" animation__fadeout1="property:material.opacity;startEvents:explode;to:0;dur:200;from:1;easing:linear;"></a-sphere>
 		<a-sphere radius="0.6" class="sun" id="sun-2" material="shader:flat;color:#f7ff2d" light="type:point" static-body="sphereRadius:NaN" position="-9.529 6.312 -5.546" animation__expand2="property:radius;startEvents:explode;to:2;dur:200;" animation__fadeout2="property:material.opacity;startEvents:explode;to:0;dur:200;from:1;easing:linear;"></a-sphere>
 		<a-sphere radius="0.6" class="sun" id="sun-3" material="shader:flat;color:#f7ff2d" light="type:point" static-body="sphereRadius:NaN" position="-1.36 13.974 -7.707" animation__expand3="property:radius;startEvents:explode;to:2;dur:200;" animation__fadeout3="property:material.opacity;startEvents:explode;to:0;dur:200;from:1;easing:linear;"></a-sphere>
@@ -36,6 +38,9 @@
         <a-plane position="1.5 0.4 -3.435" material="opacity:0.5;emissive:#fff" height="100" width="100" geometry="height:0.43;width:1.97">
           <a-text value="25.04 N, 121.53 E" text="align:left;color:black;" position="-0.95 0 0"></a-text>
         </a-plane>
+        <a-plane id="game-over" height="2" width="3" material="opacity:0;side:double;color:black" visible="false" scale="0.19 0.197 0.528" position="0 0 -0.464">
+          <a-image scale="2.8 1.855 1.383" position="0 0 0.02" src="img/tryagain.png"></a-image>
+      	</a-plane>
 		</a-camera>
 	</a-scene>
 </body>
